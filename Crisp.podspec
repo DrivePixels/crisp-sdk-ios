@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
 
     s.dependency 'Socket.IO-Client-Swift', '10.0.0'
     s.dependency 'SnapKit', '3.2.0'
-    s.dependency 'ObjectMapper', '2.2'
+    s.dependency 'ObjectMapper', '~> 2.2'
     s.dependency 'RxSwift', '3.0'
     s.dependency 'RxCocoa', '3.0'
     s.dependency 'EasyTipView'
@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
     s.dependency 'SDWebImage/GIF'
     s.dependency 'Lightbox'
     s.dependency 'SwiftEventBus'
-    s.dependency 'Alamofire', '4.0'
+    s.dependency 'Alamofire', '~> 4.1'
     s.dependency 'NVActivityIndicatorView'
     s.dependency 'DateToolsSwift'
 
