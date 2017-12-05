@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
     s.dependency 'EasyTipView'
     s.dependency 'SDWebImage'
     s.dependency 'SDWebImage/GIF'
-    s.dependency 'Lightbox'
+    s.dependency 'Lightbox', '1.0.0'
     s.dependency 'SwiftEventBus'
     s.dependency 'Alamofire', '~> 4.1'
     s.dependency 'NVActivityIndicatorView'
