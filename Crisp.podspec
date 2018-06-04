@@ -1,15 +1,19 @@
 Pod::Spec.new do |s|
     s.name                  = 'Crisp'
-    s.version               = '0.1.0'
+    s.version               = '0.1.12'
     s.summary               = 'The Crisp iOS Framework'
     s.homepage              = 'https://crisp.im/'
 
     s.author                = {
-        'Name' => 'quentin@crisp.im'
+        'Name' => 'baptiste@crisp.chat'
     }
     s.license               = {
         :type => 'Copyright',
         :file => 'LICENSE'
+    }
+
+    s.resource_bundles = {
+        'Crisp' => ['Sources/assets/**/*.{js,html}']
     }
 
     s.platform              = :ios
@@ -19,24 +23,10 @@ Pod::Spec.new do |s|
     }
 
     s.source_files  = "Sources/**/*.swift"
-    s.resources = "Sources/Ressources/**/*"
 
+    s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
     s.ios.deployment_target = '9.0'
 
     s.requires_arc          = true
-
-    s.dependency 'Socket.IO-Client-Swift', '10.0.0'
-    s.dependency 'SnapKit', '3.2.0'
-    s.dependency 'ObjectMapper', '~> 2.2'
-    s.dependency 'RxSwift', '3.0'
-    s.dependency 'RxCocoa', '3.0'
-    s.dependency 'EasyTipView'
-    s.dependency 'SDWebImage'
-    s.dependency 'SDWebImage/GIF'
-    s.dependency 'Lightbox', '1.0.0'
-    s.dependency 'SwiftEventBus'
-    s.dependency 'Alamofire', '~> 4.1'
-    s.dependency 'NVActivityIndicatorView'
-    s.dependency 'DateToolsSwift'
 
 end
