@@ -74,7 +74,11 @@ open class CrispView: UIView, UIWebViewDelegate {
             filePath = frameworkBundle.path(forResource: "assets/index", ofType: "html")
         }
 
-        let urlPath =  URL(string: filePath!)
+        if let urlPath = URL(string: filePath!) {
+            webView.loadRequest(URLRequest(url: urlPath))
+        } else if filePath != nil {
+            webView.loadRequest(URLRequest(url: URL(fileURLWithPath: filePath!)))
+        }
 
         webView.loadRequest(URLRequest(url: urlPath!))
         
